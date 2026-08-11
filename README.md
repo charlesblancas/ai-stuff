@@ -11,6 +11,7 @@ The result should be easy for a human to inspect: what triggers it, what it does
 ## Skills
 
 - [`concise-skill-writer`](skills/concise-skill-writer/SKILL.md) — Writes or tightens skills so they remain short, direct, and human-auditable.
+- [`charlesify`](skills/charlesify/SKILL.md) — Rewrites text in Charles Blancas's direct, practical, human voice.
 - [`handoff`](skills/handoff/SKILL.md) — Creates a compact, redacted handoff document for a fresh agent.
 
 ### Work workflow

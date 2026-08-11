@@ -1,0 +1,4 @@
+interface:
+  display_name: "Charlesify"
+  short_description: "Write in Charles’s clear, human voice"
+  default_prompt: "Use $charlesify to rewrite this in my direct, curious, practical voice."
