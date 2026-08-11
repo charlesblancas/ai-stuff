@@ -1,0 +1,4 @@
+interface:
+  display_name: "Concise Skill Writer"
+  short_description: "Write short, readable, auditable Codex skills"
+  default_prompt: "Use $concise-skill-writer to write or tighten this skill so it is concise, readable, and auditable."

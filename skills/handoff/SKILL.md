@@ -5,21 +5,19 @@ description: Create a compact, redacted handoff document for a fresh Codex agent
 
 # Handoff
 
-Produce a standalone Markdown handoff file in the operating system's temporary directory, never in the current workspace. Capture only the context needed to continue the work and point to existing artifacts instead of copying their contents.
+Write a standalone Markdown handoff in the OS temporary directory, never the workspace. Capture only what a fresh agent needs to continue.
 
 ## Workflow
 
-1. Inspect the current conversation and identify the active objective, decisions, constraints, blockers, and concrete next actions.
-2. If the user supplied an argument, treat it as the focus of the next session and tailor the handoff around it.
-3. If needed, inspect referenced artifacts. Do not duplicate content already recorded in specs, plans, ADRs, issues, commits, diffs, or other artifacts; cite each by absolute path or URL.
-4. Redact API keys, passwords, tokens, authentication material, private URLs containing secrets, and unnecessary personally identifying information. Replace redacted values with `[REDACTED]`.
-5. Write the handoff as Markdown to the OS temporary directory obtained from the relevant environment variable (`TEMP`/`TMP` on Windows, `TMPDIR` on Unix-like systems). Use a descriptive filename such as `codex-handoff-YYYYMMDD-HHmmss.md`.
-6. Include a `Suggested skills` section listing skills the next agent should invoke, with a brief reason for each. Include only skills relevant to the stated next-session focus.
-7. Verify the file exists and report its absolute path.
+1. Identify the objective, status, decisions, constraints, blockers, and next actions.
+2. Treat any user argument as the next session's focus.
+3. Reference existing specs, plans, ADRs, issues, commits, diffs, and other artifacts by absolute path or URL; do not duplicate them.
+4. Redact keys, passwords, tokens, authentication material, secret-bearing URLs, and unnecessary personal information as `[REDACTED]`.
+5. Write to `TEMP`/`TMP` on Windows or `TMPDIR` on Unix-like systems, using a name such as `codex-handoff-YYYYMMDD-HHmmss.md`. Include only relevant suggested skills, verify the file, and report its absolute path.
 
 ## Required document structure
 
-Use this compact structure, omitting empty sections:
+Use this structure; omit empty sections:
 
 ```markdown
 # Handoff
