@@ -1,6 +1,6 @@
 ---
 name: work-specify
-description: Convert a confirmed shared understanding into an approved, testable specification. Use after work-understand and before implementation planning.
+description: Convert a confirmed shared understanding into a testable specification. Use after work-understand and before implementation planning.
 ---
 
 # Work: Specify
@@ -24,4 +24,4 @@ Use precise statements. Mark any remaining choice as an open question instead of
 
 Check that every acceptance criterion can be verified and every requirement is traceable to the confirmed understanding. Update `work.md` with the spec, decisions, and open questions.
 
-Show the spec to the user. Do not plan implementation until the user approves it or explicitly delegates the remaining decisions.
+Continue to `work-plan` without waiting for approval. Return to `work-understand` only if the spec exposes a material ambiguity.

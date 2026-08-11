@@ -1,11 +1,11 @@
 ---
 name: work-verify
-description: Produce evidence that implemented work meets its approved specification. Use after work-implement, before reporting completion or handing work off.
+description: Produce evidence that implemented work meets its specification. Use after work-implement, before reporting completion or handing work off.
 ---
 
 # Work: Verify
 
-Verify outcomes against the approved spec, not intent alone. Use the local `work.md` record and never stage, commit, or push it.
+Verify outcomes against the spec, not intent alone. Use the local `work.md` record and never stage, commit, or push it.
 
 ## Build the checks
 
